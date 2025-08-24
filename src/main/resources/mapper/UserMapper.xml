@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.max.usercebter.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.max.usercebter.domain.User">
+            <id property="id" column="id" />
+            <result property="username" column="username" />
+            <result property="account" column="account" />
+            <result property="gender" column="gender" />
+            <result property="avatarUrl" column="avatarUrl" />
+            <result property="userPassword" column="userPassword" />
+            <result property="tel" column="tel" />
+            <result property="email" column="email" />
+            <result property="status" column="status" />
+            <result property="createTime" column="createTime" />
+            <result property="updateTime" column="updateTime" />
+            <result property="isDelete" column="isDelete" />
+            <result property="userRole" column="userRole" />
+            <result property="planetCode" column="planetCode" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,username,account,gender,avatarUrl,userPassword,
+        tel,email,status,createTime,updateTime,
+        isDelete,userRole,planetCode
+    </sql>
+</mapper>
